@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "HWYGOTH";
+    src: url('assets/HWYGWDE.TTF') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: #308446 gainsboro;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background: url(assets/owlback.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 15px 6px;
+    color: black;
+}
+
+header {
+    max-width: 1050px;
+    margin: 20px auto;
+}
+
+main {
+    max-width: 730px;
+    margin: auto;
+}
+
+h1,
+h2,
+.sign a {
+    display: block;
+    font-family: 'HWYGOTH', sans-serif;
+    background-color: #308446;
+    color: white;
+    padding: 15px;
+    border: 3px white solid;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    margin: 0;
+    line-height: 1;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: calc(1.75rem + 1.1vw);
+    letter-spacing: 4px;
+    padding: 0.75em;
+    border: 5px white solid;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+p,
+li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+figure {
+    margin: 1rem 0.5rem;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+a {
+    border-radius: 2px;
+}
+
+a:hover,
+a:focus {
+    background-color: white;
+    outline: 2px white solid;
+    text-decoration-style: double;
+}
+
+a:visited {
+    color: #246536;
+}
+
+.sign {
+    margin: 20px 0 0 0px;
+    position: relative;
+}
+
+.sign:has(h2) {
+    max-width: 250px;
+    margin-left: 30px;
+}
+
+.sign div {
+    height: 25px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(192, 192, 192, 0) 20%,
+            rgba(192, 192, 192, 1) 20%,
+            rgba(192, 192, 192, 1) 25%,
+            rgba(192, 192, 192, 0) 25%,
+            rgba(192, 192, 192, 0) 75%,
+            rgba(192, 192, 192, 1) 75%,
+            rgba(192, 192, 192, 1) 80%,
+            rgba(192, 192, 192, 0) 80%);
+}
+
+.text {
+    background-color: gainsboro;
+    border: 3px rgb(192, 192, 192) solid;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex div {
+    flex: 1;
+    min-width: 200px;
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 82%;
+    }
+}
