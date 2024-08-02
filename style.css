@@ -156,6 +156,7 @@ a:visited {
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .marquee p {
